@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Diabetes Prediction</title>
+      <!-- Include CSS -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+      <!-- Include JS -->
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+      <div class="container">
+            <h1>Diabetes Prediction</h1>
+            <h2>Enter the following details to predict whether you have diabetes or not</h2>
+
+            <form id="diabetesForm" class="prediction-form">
+                  <label for="pregnancies">Number of Pregnancies:</label>
+                  <input type="number" id="pregnancies" name="pregnancies" required><br>
+
+                  <label for="glucose">Glucose:</label>
+                  <input type="number" id="glucose" name="glucose" required><br>
+
+                  <label for="bloodPressure">Blood Pressure:</label>
+                  <input type="number" id="bloodPressure" name="bloodPressure" required><br>
+
+                  <label for="insulin">Insulin:</label>
+                  <input type="number" id="insulin" name="insulin" required><br>
+
+                  <label for="heartRate">Heart Rate:</label>
+                  <input type="number" id="heartRate" name="heartRate" required><br>
+
+                  <label for="bmi">BMI:</label>
+                  <input type="number" step="0.001" id="bmi" name="bmi" required><br>
+
+                  <label for="diabetesPedigree">Diabetes Pedigree:</label>
+                  <input type="number" step="0.001"  id="diabetesPedigree" name="diabetesPedigree" required><br>
+
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" required><br>
+
+                  <button type="button" onclick="predict()">Check Diabetes Result</button>
+                  <br>
+                  <button type="button" onclick="openCheckDiabetesPage()">🩺Consult a doctor🩺</button>
+
+            </form>
+            <div id="predictionResult"></div>
+      </div>
+</body>
+</html>
