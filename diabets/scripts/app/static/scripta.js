@@ -12,7 +12,7 @@ async function predict() {
     const diabetesPedigree = document.getElementById('diabetesPedigree').value;
     const age = document.getElementById('age').value;
 
-    if (!pregnancies || !glucose || !bloodPressure || !insulin || !heartRate || !bmi || !diabetesPedigree || !age) {
+    if (!pregnancies || !glucose || !bloodPressure || !insulin  || !bmi || !diabetesPedigree || !age) {
         alert('Please fill in all fields!');
         return;
     }
