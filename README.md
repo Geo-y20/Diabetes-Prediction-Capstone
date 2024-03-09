@@ -71,4 +71,5 @@ The Pulse Sensor data can be visualized using Processing software. The software 
 - `static/` and `templates/`: Contain files for the web application.
 - `Arduino/`: Includes the PulseSensor_BPM sketch for Arduino.
 - `script`: Contains  `static/` and `templates/` for running Flask web app .
-
+## Sample Web Page 
+<img src= 'Picture1.png'>
